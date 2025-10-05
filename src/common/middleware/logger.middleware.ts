@@ -5,6 +5,6 @@ export const loggerMiddleware: FieldMiddleware = async (
   next: NextFn,
 ) => {
   const value: string = await next();
-  console.log('LoggerMiddleware', { value, ctx });
+  // console.log('LoggerMiddleware', { value, ctx });
   return value?.toUpperCase();
 };

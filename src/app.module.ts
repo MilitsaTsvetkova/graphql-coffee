@@ -30,6 +30,7 @@ import { PubSubModule } from './pub-sub/pub-sub.module';
       database: 'postgres',
       autoLoadEntities: true,
       synchronize: true,
+      logging: ['query'],
     }),
     CoffeesModule,
     DateScalar,
